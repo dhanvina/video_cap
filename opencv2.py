@@ -15,7 +15,7 @@ while True:
     faces = faceDetect.detectMultiScale(gray, 1.3, 5);
     for (x, y, w, h) in faces:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
-        img_name = "opencv_frame_{}.png".format(img_counter)
+        img_name = f"{face_id}{img_counter}.png"
         if k % 256 == 32:
             cv2.imwrite(img_name, frame)
             print("{} written!".format(img_name))
