@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="/login">LOGIN</a></li>
+                <li><a href="/register">REGISTER</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content"><br>
+            <h1><br><span>Capture Images Using</span><br>Face Recognition<br></h1>
+            <p class="par"></p>
+            <a href="/cap"><button class="cn" style="font-size: 20px;">Capture Images</button></a>
+        </div>
+    </div>
+</body>
+</html>
