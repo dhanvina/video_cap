@@ -18,6 +18,7 @@ while True:
         # ESC pressed
         print("Escape hit, closing...")
         break
+    print('Just another print statement')
 
     # for capture
     elif k%256 == 32:
